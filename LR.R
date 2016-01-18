@@ -1,0 +1,7 @@
+data <- read.csv('~/workdir/rosn.txt', sep='\t')
+fit <- lm(data$ROSN ~ data$BRN ) 
+summary(fit) 
+png(filename="~/workdir/LR.png")
+plot(data$ROSN~data$BRN, xlab="ROSN", ylab="data$BRN")
+abline(fit)
+dev.off()
