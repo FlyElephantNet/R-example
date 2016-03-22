@@ -1,4 +1,4 @@
-## Octave example
+## R example
 
 ## Run command
 Rscript LR.R
